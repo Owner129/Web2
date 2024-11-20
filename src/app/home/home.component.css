@@ -1,0 +1,16 @@
+.home {
+  width: Calc(100% - 200px);
+  display: flex;
+  flex-direction: column;
+  gap:32px;
+  background: rgb(240,243,244);
+  min-height: 100vh;
+  position: relative;
+}
+
+@media screen and (max-width: 992px) {
+  .home{
+    width: 100%;
+    gap:16px
+  }
+}

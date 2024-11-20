@@ -1,0 +1,16 @@
+.page {
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  padding-left: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+@media screen and (max-width: 992px) {
+  .page {
+    padding-left: 50px;
+  }
+}

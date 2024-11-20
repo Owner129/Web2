@@ -1,0 +1,43 @@
+.charts {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 32px;
+  padding: 0 16px;
+  gap: 32px;
+}
+
+.charts_d {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #fff;
+}
+
+.charts_d canvas {
+  margin: 50px;
+}
+
+.charts_d h3 {
+  border-bottom: solid 1px lightgrey;
+  text-align: left;
+  width: 100%;
+  padding: 16px;
+}
+
+.total-text {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  text-align: center;
+}
+
+@media screen and (max-width: 992px) {
+  .charts {
+    flex-direction: column;
+  }
+}

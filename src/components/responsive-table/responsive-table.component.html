@@ -1,0 +1,38 @@
+<div class="responsive__table">
+  <h3 style="padding:16px">Responsive Table</h3>
+
+  <div class="responsive__table__filters">
+    <mat-form-field appearance="fill">
+      <input matInput type="text" placeholder="Search by name" [(ngModel)]="searchTerm" />
+    </mat-form-field>
+    <div>
+      <label for="statusFilter">Filter by Status:</label>
+      <select id="statusFilter" [(ngModel)]="selectedStatus">
+        <option value="">All</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Completed">Completed</option>
+        <option value="Pending">Pending</option>
+        <option value="Not Started">Not Started</option>
+      </select>
+    </div>
+  </div>
+
+  <table>
+    <thead>
+    <tr>
+      <th>Name</th>
+      <th>Task</th>
+      <th style="cursor: pointer" (click)="sortTasksByDate()">Date <span *ngIf="sortDirection === 'asc'">↑</span><span *ngIf="sortDirection === 'desc'">↓</span></th>
+      <th>Status</th>
+    </tr>
+    </thead>
+    <tbody style="padding-top: 8px">
+    <tr *ngFor="let task of filteredTasks()">
+      <td>{{ task.name }}</td>
+      <td>{{ task.task }}</td>
+      <td>{{ task.date }}</td>
+      <td>{{ task.status }}</td>
+    </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,25 @@
+<div class="charts">
+  <div class="charts_d">
+    <h3>Analysis</h3>
+    <canvas baseChart
+            [datasets]="[{ data: doughnutChartData, backgroundColor: ['#FF6384', '#36A2EB', '#FFCE56', '#4BC0C0', '#9966FF'] }]"
+            [labels]="doughnutChartLabels"
+            [options]="doughnutChartOptions"
+            type="doughnut">
+    </canvas>
+    <h1 class="total-text">
+      1500<br/>
+      Visits
+    </h1>
+  </div>
+  <div class="charts_d" style="width: 100%">
+    <h2>Statistics</h2>
+    <canvas baseChart
+            [datasets]="lineChartData"
+            [labels]="lineChartLabels"
+            [options]="lineChartOptions"
+            [legend]="true"
+            type='line'>
+    </canvas>
+  </div>
+</div>

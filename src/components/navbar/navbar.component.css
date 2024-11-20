@@ -1,0 +1,51 @@
+nav{
+  height: 100vh;
+  position: fixed;
+  width: 200px;
+  min-width: 200px;
+  max-width: 200px;
+  background: rgb(33,44,54);
+  top: 0;
+  left: 0;
+  color: rgba(255,255,255,0.9);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+nav h1{
+  height: 48px;
+  line-height: 48px;
+}
+nav p,nav h1{
+  padding-left: 16px;
+}
+nav p{
+  color: grey;
+}
+nav div{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+  padding: 8px 8px 8px 16px;
+}
+nav div:hover{
+  background: rgb(255,255,255,0.3);
+}
+nav div svg{
+  width: 24px;
+  height: 24px;
+}
+
+@media screen and (max-width: 992px) {
+  nav{
+    width: 50px;
+    min-width:0;
+    max-width: 50px;
+  }
+  nav div a,nav p,nav h1{
+    display: none;
+  }
+}

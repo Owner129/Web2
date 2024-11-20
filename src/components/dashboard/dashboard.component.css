@@ -1,0 +1,152 @@
+.dashboard__text {
+  width: 100%;
+  border-bottom: solid 1px lightgrey;
+  background: rgb(245, 247, 246);
+  height: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 12px 16px;
+}
+.tables {
+  margin-top: 32px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+  gap: 32px;
+}
+
+.table {
+  width: 100%;
+  height: 425px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background: #ffffff;
+}
+
+.table__header {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 12px;
+  line-height: 24px;
+  height: 36px;
+  text-align: center;
+  align-items: center;
+  border-bottom: solid 1px lightgrey;
+}
+
+.table__header h4 {
+  font-weight: 500;
+}
+
+.table__header span {
+  padding: 0 8px;
+  color: #ffffff;
+  border-radius: 4px;
+  background: rgb(140, 190, 110);
+}
+
+.table__user {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  justify-content: flex-start;
+  padding: 0 16px;
+  align-items: center;
+}
+
+.table__user img, .table__user svg {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.table__user svg {
+  width: 25px;
+  height: 25px;
+  margin-bottom: 10px;
+}
+
+.table__user div {
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.table__user div div {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+  line-height: 25px;
+  gap: 4px;
+}
+
+.table__user div div svg {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+
+.table__row {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.table__message {
+  margin: 0 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 4px;
+  background: lightgreen;
+  height: 30px;
+  line-height: 30px;
+  align-items: center;
+  color: darkolivegreen;
+}
+
+.manage__report{
+  display: flex;
+  flex-direction: row;
+  margin: 32px 16px 0;
+  background: #fff;
+}
+.manage__report div:first-child{
+  width: 80%;
+}
+.manage__report div div,.manage__report div p{
+  padding: 16px;
+}
+.manage__report div h3{
+  border-bottom: solid 1px lightgrey;
+  text-align: left;
+  width: 100%;
+  padding: 16px;
+}
+
+.manage__report div:last-child{
+  background: rgb(230,235,235);
+  width:20%
+}
+
+@media screen and (max-width: 992px) {
+  .tables,.manage__report{
+    flex-direction: column;
+  }
+  .manage__report div:first-child{
+    width: 100%;
+  }
+  .manage__report div:last-child{
+    width:100%
+  }
+}
